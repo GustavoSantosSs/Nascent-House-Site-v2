@@ -170,6 +170,7 @@ transform: translatey(0px);
     display: block;
     filter: invert(100%) sepia(41%) saturate(0%) hue-rotate(162deg) brightness(104%) contrast(101%);
     border-radius: 10px;
+    cursor: pointer;
 }
 #closeA.mostra {
     display: none;
@@ -201,6 +202,7 @@ transform: translatey(0px);
     margin-top: 16px;
     border-radius: 45px;
     background-image: linear-gradient(45deg, #fe5f01, #f90000);
+    cursor: pointer;
 }
 #close-content:hover {
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.568);
@@ -298,6 +300,7 @@ transform: translatey(0px);
     border-radius: 30px;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
 }
 #menu-list ul li:hover {
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.664);
