@@ -186,61 +186,8 @@ transform: translatey(0px);
     transition: all 1s;
     float: left;
 }
-#close-x {
-    height: 66px;
-    width: 0px;
-    transition: all 0.5s;
-}
-#close-x.show {
-    height: 66px;
-    width: 100%;
-}
-#close-content {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    margin-top: 16px;
-    border-radius: 45px;
-    background-image: linear-gradient(45deg, #fe5f01, #f90000);
-    cursor: pointer;
-}
-#close-content:hover {
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.568);
-}
-#close-content:hover #closeTXT {
-    color: white;
-    transition: 0.5s;
-}
-#close-content:hover #closeB {
-    transition: 0.5s;
-    filter: invert(100%) sepia(41%) saturate(0%) hue-rotate(162deg) brightness(104%) contrast(101%);
-}
-#menu-closeBTN {
-    width: 32%;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    padding-top: 12px;
-    margin: auto;
-}
-#closeTXT {
-    width: 0px;
-    position: absolute;
-    display: none;
-}
-#closeTXT.show {
-    display: block;
-    width: 63px;
-    top: 12px;
-    margin: auto;
-    font-size: 1.5em;
-    text-align: center;
-    padding-top: 6px;
-    font-family: sans-serif;
-    position: absolute;
-    right: 0;
-    transition: all 1s;
-}
+
+
 #menu-container {
     width: 0px;
     height: 80vh;
@@ -277,41 +224,31 @@ transform: translatey(0px);
     padding-bottom: 24px;
     height: 88%;
 }
-#menu-list {
+#name-user {
     float: right;
     opacity: 0;
-    width: 100%;
+    width: 160px;
+    height: 130px;
 }
-#menu-list.hid {
+#name-user.hid {
     opacity: 1;
     transition: all 2s;
+    display: flex;
 }
-#menu-list ul {
-    width: 55%;
-    padding: 0px;
-    margin: 0px;
-    float: right;
-}
-#menu-list ul li {
-    display: block;
-    height: 50px;
-    border: 2px solid;
-    margin-bottom: 10px;
-    border-radius: 30px;
+#user {
+    position: relative;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    cursor: pointer;
+    width: 100%;
 }
-#menu-list ul li:hover {
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.664);
-    background-color: black;
-    color: white;
-}
-#menu-list p {
-    font-size: 1.3em;
+#user p {
+    font-size: 1.4em;
     font-family: sans-serif;
     margin: 14px;
-    font-weight: bold;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
 }
 #login {
     margin-top: 35px;
@@ -327,25 +264,78 @@ transform: translatey(0px);
     background-image: linear-gradient(45deg, #fe5f01, #f90000);
     border-radius: 50%;
 }
-#menu-userNAME {
-    width: 130px;
-    height: 60px;
-    color: black;
-    font-family: sans-serif;
-    text-align: center;
-    margin: 14px 0px;
-}
-#user {
-    margin: auto;
-    position: absolute;
-}
 #cards-menu {
-    height: 149px;
     width: 100%;
-    margin-top: 105px;
-    border: 2px solid gray;
+    margin-top: 35px;
 }
-
+#acc-menu {
+}
+#acc-btn {
+    height: 67px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 45px;
+}
+#options-menu {
+    position: relative;
+}
+#options-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#options-menu li {
+    display: block;
+    height: 67px;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 45px;
+    margin: 2px;
+}
+#close-x {
+    height: 135px;
+    width: 0px;
+    transition: all 0.5s;
+}
+#close-x.show {
+    width: 100%;
+    margin-top: 15px;
+}
+#x-btn {
+    display: none;
+    transition: all 0.5s;
+}
+#x-btn.show {
+    display: block;
+    height: 88px;
+    width: 88px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #fe5f01, #f90000);
+}
+#x-btn:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.253);
+}
+#x-icon {
+    opacity: 0;
+}
+#x-icon.show {
+    opacity: 1;
+    transition: all 0.2s;
+}
+#x-icon:hover {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(105%);
+}
+#close-txt {
+    padding-top: 45px;
+}
+#close-txtBTN {
+    height: 81px;
+    border: 2px solid;
+    border-radius: 20px;
+}
 
 /* only-a-div-space */
 
