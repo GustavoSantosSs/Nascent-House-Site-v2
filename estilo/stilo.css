@@ -270,11 +270,50 @@ transform: translatey(0px);
     width: 100%;
     margin-top: 35px;
 }
+.btn {
+    cursor: pointer;
+}
 #acc-btn {
-    height: 67px;
-    margin: 2px;
-    border: 2px solid black;
+    height: 64px;
+    margin: 5px 0;
+    border: 2px solid #151515;
     border-radius: 45px;
+    background-color: #151515;
+}
+#acc-btn ul {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#acc-btn li {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+#acc-btn img {
+    filter: invert(100%) sepia(0%) saturate(1356%) hue-rotate(238deg) brightness(108%) contrast(101%);
+    transition: 0.9s;
+}
+#acc-icon {
+    border-right: 2px solid white;
+    border-radius: 45px 0 0 45px ;
+}
+#acc-icon:hover img {
+    transition: 0.9s;
+    transform: rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+}
+#acc-icon2 {
+    border-radius: 0 45px 45px 0;
+}
+#acc-icon2:hover img {
+    transition: 0.9s;
+    transform: scale(1.1);
 }
 #options-menu {
     position: relative;
@@ -286,8 +325,8 @@ transform: translatey(0px);
 }
 #options-menu li {
     display: flex;
-    height: 67px;
-    width: 50%;
+    height: 55px;
+    width: 33%;
     border: 2px solid black;
     border-radius: 45px;
     margin: 2px;
