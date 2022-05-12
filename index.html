@@ -35,9 +35,22 @@
             <div id="menu-container">
                 <div id="menu-content">
                 <div id="name-user">
-                    <div id="user">
-                        <p>Name-User</p>
-                    </div>
+                    <section id="user">
+                        <div id="text-user">
+                            <ul>                                    
+                                <li><img src="./images/nav-menu/person-lines-fill.svg" width="30px"></li>           
+                                <li><p id="username">User-Name</p></li>             
+
+                            </ul>	
+                        </div>
+                        <div id="changeUser">	
+                        <button onclick="SubmitName()" id="submit-btn" class="btn-app">Change username</button>
+                        <button onclick="ChangeName()" id="change-btn" class="btn-app">Submit username</button>
+                        </div>
+                        <div id="send-user">	
+                            <input id="user-change" placeholder="Type your name..."></input>
+                        </div>
+                    </section>
                 </div>
                 <div id="menu-userIMG">
                     <div id="img-menu"></div>
@@ -46,17 +59,21 @@
                     <div id="acc-menu">
                         <div id="acc-btn">
                             <ul>
-                                <li id="acc-icon" class="btn"><img src="./images/nav-menu/gear.svg" width="40px"/></li>
-                                <li id="acc-icon2" class="btn"><img src="./images/nav-menu/person-lines-fill.svg" width="40px"/></li>
+                                <li id="acc-icon" class="btn">
+                                    <img src="./images/nav-menu/gear.svg" width="35px"/>
+                                </li>
+                                <li id="acc-icon2" class="btn">
+                                    <img src="./images/nav-menu/person-square.svg" width="35px"/>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div id="options-menu">
                         <ul>
-                            <li class="btn">
+                            <li class="btn" id="translate-btn">
                                 <img src="./images/nav-menu/translate.svg" width="35px"/>
                             </li>
-                            <li class="btn">
+                            <li class="btn" id="letterSize-btn">
                                 <img src="./images/nav-menu/textarea-t.svg" width="35px"/>
                             </li>
                         </ul>
@@ -143,7 +160,7 @@
                 </div>
                 <div id="our-obj-one">
                     <div id="obj-one-txt">
-                        <h1 class="about-us-Gtxt">Our Services</h1>
+                        <h1 class="about-us-Gtxt"><span class="firstLang">Our Services</span></h1>
                         <p id="obj-Ptxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab voluptate recusandae obcaecati! Nulla repudiandae sint repellendus dolore mollitia rerum error aliquam vero porro, eligendi natus numquam iure voluptate id. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, tenetur aut laborum quidem magni ea recusandae assumenda repudiandae. Dicta fuga amet debitis fugiat suscipit architecto exercitationem soluta, voluptatem sint rem!</p>
                     </div>
                 </div>

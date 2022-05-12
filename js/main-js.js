@@ -23,3 +23,23 @@ function openNav () {
     var xICON = document.querySelector("#x-icon")
     xICON.classList.toggle('show')
 }
+
+function SubmitName () {
+    document.getElementById("change-btn").style.display = "block";
+    document.getElementById("user-change").style.display = "block";
+    document.getElementById("submit-btn").style.display = "none";
+}
+function ChangeName () {
+    var verificador = document.getElementById("user-change").value;
+
+    if (verificador.length > 0) {		
+    document.getElementById("change-btn").style.display = "none";
+    document.getElementById("user-change").style.display = "none";
+    document.getElementById("submit-btn").style.display = "block";
+    document.getElementById("username").innerHTML = verificador;
+    } else {
+        document.getElementById("change-btn").style.display = "none";
+        document.getElementById("user-change").style.display = "none";
+        document.getElementById("submit-btn").style.display = "block";
+    }
+}

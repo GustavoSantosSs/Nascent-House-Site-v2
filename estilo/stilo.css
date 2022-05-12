@@ -243,16 +243,79 @@ transform: translatey(0px);
     justify-content: center;
     width: 100%;
 }
-#user p {
+#text-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text-user ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+#text-user ul li {
+    display: flex;
+    justify-content: center;
+}
+#login {
+    margin-top: 35px;
+}
+#user {
+    display: block;
+}
+#username {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;    
     font-size: 1.4em;
-    font-family: sans-serif;
-    margin: 14px;
+    margin: 11px;
     font-weight: bolder;
     color: black;
     text-align: center;
 }
-#login {
-    margin-top: 35px;
+#send-user {
+    display: flex;
+    justify-content: center;
+}
+#user-change {
+    height: 20px;
+    width: 70%;
+    display: none;
+    margin-top: 5px;
+}
+#changeUser {
+    display: flex;
+    justify-content: center;
+}
+#change-btn {
+    height: 35px;
+    background-color: #151515;
+    color: white;
+    border-radius: 45px;
+    border: 1px solid #151515;
+    display: none;
+}
+#change-btn:hover {
+    background-color: white;
+    color: #151515;
+}
+#submit-btn {
+    display: block;
+    height: 35px;
+    background-color: #151515;
+    color: white;
+    border-radius: 45px;
+    border: 1px solid #151515;
+}
+#submit-btn:hover {
+    background-color: white;
+    color: #151515;
+}
+.btn-app {
+    margin: 0;
+    font-weight: bold;
+    padding: 0 20px;
+    cursor: pointer;
 }
 #menu-userIMG {
     position: relative;
@@ -331,6 +394,28 @@ transform: translatey(0px);
     border-radius: 45px;
     margin: 2px;
     justify-content: center;
+}
+#translate-btn:hover {
+    background-color: #151515;
+}
+#translate-btn img {
+    transition: 0.5s;
+}
+#translate-btn:hover img {
+    transition: 0.5s;
+    transform: scale(1.1);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(105%);
+}
+#letterSize-btn:hover {
+    background-color: #151515;
+}
+#letterSize-btn img {
+    transition: 0.5s;
+}
+#letterSize-btn:hover img {
+    transition: 0.5s;
+    transform: scale(1.1);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(105%);
 }
 #close-x {
     height: 135px;
