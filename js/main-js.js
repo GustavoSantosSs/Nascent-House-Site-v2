@@ -44,11 +44,11 @@ function ChangePhoto (tipo) {
     var btnChange = document.querySelector("#select-img")
     switch (tipo) {
         case "img1":
-            backIMG.style = "background: url('../images/nav-menu/girl.jpg') no-repeat center;"
+            backIMG.style = "background: url('./images/nav-menu/girl.jpg') no-repeat center;"
             btnChange.style = "opacity: 0; margin-top: 0px; display: none;"
         break;
         case "img2":
-            backIMG.style = "background: url('../images/nav-menu/boy.jpg') no-repeat center;"
+            backIMG.style = "background: url('./images/nav-menu/boy.jpg') no-repeat center;"
             btnChange.style = "opacity: 0; margin-top: 0px; display: none;"
         break;
     }
