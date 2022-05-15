@@ -24,6 +24,36 @@ function openNav () {
     xICON.classList.toggle('show')
 }
 
+function ShowBTN () {
+    var BTNshow = document.querySelector("#select-btn")
+    BTNshow.style = "opacity: 1; transition: all 0.5s;"
+}
+
+function HideBTN () {
+    var BTNshow2 = document.querySelector("#select-btn")
+    BTNshow2.style = "opacity: 0; transition: all 0.5s;"
+}
+
+function DropGrid() {
+    var xSele = document.querySelector("#select-img")
+    xSele.style = "opacity: 1; margin-top: 17px; transition: 0.5s; display: flex; justify-content: center;"
+}
+
+function ChangePhoto (tipo) {
+    var backIMG = document.querySelector("#img-user")
+    var btnChange = document.querySelector("#select-img")
+    switch (tipo) {
+        case "img1":
+            backIMG.style = "background: url('../images/nav-menu/girl.jpg') no-repeat center;"
+            btnChange.style = "opacity: 0; margin-top: 0px; display: none;"
+        break;
+        case "img2":
+            backIMG.style = "background: url('../images/nav-menu/boy.jpg') no-repeat center;"
+            btnChange.style = "opacity: 0; margin-top: 0px; display: none;"
+        break;
+    }
+}
+
 function SubmitName () {
     document.getElementById("change-btn").style.display = "block";
     document.getElementById("user-change").style.display = "block";
@@ -42,4 +72,9 @@ function ChangeName () {
         document.getElementById("user-change").style.display = "none";
         document.getElementById("submit-btn").style.display = "block";
     }
+}
+
+function sizeLetter() {
+    var iconL = document.querySelector("#letterSize-btn")
+    iconL.classList.toggle('check')
 }

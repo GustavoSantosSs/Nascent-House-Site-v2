@@ -53,7 +53,15 @@
                     </section>
                 </div>
                 <div id="menu-userIMG">
-                    <div id="img-menu"></div>
+                    <div class="img-menu" id="img-user" onmouseenter="ShowBTN()" onmouseleave="HideBTN()">
+                            <div id="select-btn" onclick="DropGrid()">
+                                <img src="./images/nav-menu/camera-fill.svg" width="20px"/>
+                            </div>                                
+                            <ul id="select-img">
+                                    <li onclick="ChangePhoto('img1')">#1</li>
+                                    <li onclick="ChangePhoto('img2')">#2</li>
+                            </ul>
+                    </div>
                 </div>      
                 <section id="cards-menu">
                     <div id="acc-menu">
@@ -73,7 +81,7 @@
                             <li class="btn" id="translate-btn">
                                 <img src="./images/nav-menu/translate.svg" width="35px"/>
                             </li>
-                            <li class="btn" id="letterSize-btn">
+                            <li class="btn" id="letterSize-btn" onclick="sizeLetter()">
                                 <img src="./images/nav-menu/textarea-t.svg" width="35px"/>
                             </li>
                         </ul>
@@ -160,7 +168,7 @@
                 </div>
                 <div id="our-obj-one">
                     <div id="obj-one-txt">
-                        <h1 class="about-us-Gtxt"><span class="firstLang">Our Services</span></h1>
+                        <h1 class="about-us-Gtxt">Our <span style="color: #f90000;">Services</span></h1>
                         <p id="obj-Ptxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab voluptate recusandae obcaecati! Nulla repudiandae sint repellendus dolore mollitia rerum error aliquam vero porro, eligendi natus numquam iure voluptate id. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, tenetur aut laborum quidem magni ea recusandae assumenda repudiandae. Dicta fuga amet debitis fugiat suscipit architecto exercitationem soluta, voluptatem sint rem!</p>
                     </div>
                 </div>
@@ -269,7 +277,7 @@
                         <li id="info-txt">
                             <div id="img-ro2T">
                                 <h2 class="about-us-Mtxt">Traditional Rooms</h2>
-                                <p class="about-us-Ptxt" id="cat-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aliquam quaerat ea ipsum sint? Repudiandae magni et accusantium reiciendis explicabo corporis aspernatur asperiores earum aliquam architecto veritatis adipisci, voluptatum animi.</p>
+                                <p class="about-us-Ptxt" id="cat-txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aliquam quaerat ea ipsum sint? Repudiandae magni et accusantium reiciendis explicabo corporis aspernatur asperiores earum aliquam architecto veritatis adipisci, voluptatum animi.</p>
                             </div>
                         </li>
                     </ul>
