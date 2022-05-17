@@ -54,9 +54,10 @@
                 </div>
                 <div id="menu-userIMG">
                     <div class="img-menu" id="img-user" onmouseenter="ShowBTN()" onmouseleave="HideBTN()">
-                            <div id="select-btn" onclick="DropGrid()">
-                                <img src="./images/nav-menu/camera-fill.svg" width="20px"/>
-                            </div>                                
+                            <div id="select-btn">
+                                <img id="close-OFF" onclick="DropGrid()" src="./images/nav-menu/camera-fill.svg" width="23px"/>
+                                <img id="close-ON" onclick="HideGrid()" src="./images/nav-menu/x.svg" width="25px"/>
+                            </div>                            
                             <ul id="select-img">
                                     <li onclick="ChangePhoto('img1')">#1</li>
                                     <li onclick="ChangePhoto('img2')">#2</li>

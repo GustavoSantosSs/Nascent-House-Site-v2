@@ -37,6 +37,19 @@ function HideBTN () {
 function DropGrid() {
     var xSele = document.querySelector("#select-img")
     xSele.style = "opacity: 1; margin-top: 17px; transition: 0.5s; display: flex; justify-content: center;"
+    var iconOFF = document.querySelector("#close-OFF")
+    iconOFF.style = "display: none;"
+    var iconON = document.querySelector("#close-ON")
+    iconON.style = "display: block;"
+}
+
+function HideGrid() {
+    var gridChange = document.querySelector("#select-img")
+    gridChange.style = "opacity: 0; margin-top: 0px; display: none;"
+    var iconOFF = document.querySelector("#close-OFF")
+    iconOFF.style = "display: block;"
+    var iconON = document.querySelector("#close-ON")
+    iconON.style = "display: none;"
 }
 
 function ChangePhoto (tipo) {
@@ -46,10 +59,18 @@ function ChangePhoto (tipo) {
         case "img1":
             backIMG.style = "background: url('./images/nav-menu/girl.jpg') no-repeat center;"
             btnChange.style = "opacity: 0; margin-top: 0px; display: none;"
+            var iconOFF = document.querySelector("#close-OFF")
+            iconOFF.style = "display: block;"
+            var iconON = document.querySelector("#close-ON")
+            iconON.style = "display: none;"
         break;
         case "img2":
             backIMG.style = "background: url('./images/nav-menu/boy.jpg') no-repeat center;"
             btnChange.style = "opacity: 0; margin-top: 0px; display: none;"
+            var iconOFF = document.querySelector("#close-OFF")
+            iconOFF.style = "display: block;"
+            var iconON = document.querySelector("#close-ON")
+            iconON.style = "display: none;"
         break;
     }
 }
@@ -72,9 +93,4 @@ function ChangeName () {
         document.getElementById("user-change").style.display = "none";
         document.getElementById("submit-btn").style.display = "block";
     }
-}
-
-function sizeLetter() {
-    var iconL = document.querySelector("#letterSize-btn")
-    iconL.classList.toggle('check')
 }

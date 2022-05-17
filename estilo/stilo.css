@@ -347,11 +347,18 @@ transform: translatey(0px);
 }
 #select-btn:hover {
     background-color: rgba(0, 0, 0, 0.397);
-    cursor: pointer;
     transition: 0.5s;
 }
 #select-btn img {
     filter: invert(100%);
+}
+#close-ON {
+    display: none;
+    cursor: pointer;
+}
+#close-OFF {
+    display: block;
+    cursor: pointer;
 }
 #img-user li {
     color: white;
